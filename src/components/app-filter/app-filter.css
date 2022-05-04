@@ -1,0 +1,11 @@
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
