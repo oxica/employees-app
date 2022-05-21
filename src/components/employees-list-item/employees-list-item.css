@@ -1,6 +1,6 @@
 .list-group-item {
   padding: 15px 20px;
-  border-bottom: 1px solid rgb(86, 24, 145);
+  border-bottom: 1px solid #3d5a80;
 }
 
 .list-group-item:last-child {
@@ -48,4 +48,18 @@
   transition: 0.3s all;
   transform: translateX(30px);
   opacity: 0;
+}
+
+.list-group-item.like .fa-star {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.list-group-item.increase .list-group-item-label,
+.list-group-item.increase .list-group-item-input {
+  color: #e09f3e;
+}
+
+.list-group-item.increase .btn-star {
+  color: #aeaeae;
 }
