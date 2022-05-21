@@ -18,6 +18,7 @@ class App extends Component {
         { name: "Carl W.", salary: 5000, increase: false, rise: false, id: 3 },
       ],
       term: "",
+      filter: "",
     };
     this.maxId = 4;
   }
@@ -108,8 +109,10 @@ class App extends Component {
     this.setState({ term: term });
   };
 
+  filterPost = (items, filter) => {};
+
   render() {
-    const { data, term } = this.state;
+    const { data, term, filter } = this.state;
     const employees = data.length;
     const increased = data.filter((item) => item.increase).length;
     const visibleData = this.searchEmp(data, term);
